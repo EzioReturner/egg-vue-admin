@@ -1,0 +1,84 @@
+2019-04-15 13:22:37,554 INFO 3222 [egg-logrotator] agent logger reload: got log-reload message
+2019-04-15 17:55:15,109 INFO 3222 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhev/projects/SELF/node/egg-demo/app/service","stat":{"dev":16777220,"mode":16877,"nlink":2,"uid":502,"gid":20,"rdev":0,"blksize":4096,"ino":8617315108,"size":64,"blocks":0,"atimeMs":1555322115095.615,"mtimeMs":1555322115033.8572,"ctimeMs":1555322115033.8572,"birthtimeMs":1555322115033.8572,"atime":"2019-04-15T09:55:15.096Z","mtime":"2019-04-15T09:55:15.034Z","ctime":"2019-04-15T09:55:15.034Z","birthtime":"2019-04-15T09:55:15.034Z"},"remove":false,"isDirectory":true,"isFile":false}
+2019-04-15 17:55:20,689 WARN 3222 [agent:development] reload worker because /Users/zhev/projects/SELF/node/egg-demo/app/service/news.js rename
+2019-04-15 17:55:20,484 INFO 3222 [egg-watcher] Recieved a change event from eventSource: {"event":"rename","path":"/Users/zhev/projects/SELF/node/egg-demo/app/service/news.js","stat":{"dev":16777220,"mode":33188,"nlink":1,"uid":502,"gid":20,"rdev":0,"blksize":4096,"ino":8617315113,"size":0,"blocks":0,"atimeMs":1555322120473.2095,"mtimeMs":1555322120473.2095,"ctimeMs":1555322120473.2095,"birthtimeMs":1555322120473.2095,"atime":"2019-04-15T09:55:20.473Z","mtime":"2019-04-15T09:55:20.473Z","ctime":"2019-04-15T09:55:20.473Z","birthtime":"2019-04-15T09:55:20.473Z"},"remove":false,"isDirectory":false,"isFile":true}
+2019-04-15 20:40:08,431 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2344098ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-15 21:47:29,796 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2260283ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-15 22:55:09,360 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2258366ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-15 23:56:40,155 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 1909609ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-16 00:57:45,322 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 1863993ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-16 01:59:46,315 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 1939703ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-16 03:08:16,830 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2329260ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-16 04:13:02,687 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2084520ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+

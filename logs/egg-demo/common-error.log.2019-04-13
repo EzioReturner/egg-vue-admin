@@ -1,0 +1,264 @@
+2019-04-13 15:51:02,720 ERROR 2017 [-/::1/-/10ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2017
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:51:24,805 ERROR 2017 [-/::1/-/1ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 2017
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:52:00,343 ERROR 3193 [-/::1/-/3ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3193
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:52:58,971 ERROR 3223 [-/::1/-/9ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:00,044 ERROR 3223 [-/::1/-/1ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:26,994 ERROR 3223 [-/::1/-/1ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:28,088 ERROR 3223 [-/::1/-/0ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:29,780 ERROR 3223 [-/::1/-/0ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:29,993 ERROR 3223 [-/::1/-/1ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:30,168 ERROR 3223 [-/::1/-/0ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:53:30,350 ERROR 3223 [-/::1/-/1ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find news/list.tpl from 
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3223
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:55:04,651 ERROR 3256 [-/::1/-/9ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find view/news/list.tpl from /Users/zhev/projects/SELF/node/egg-demo/app/view
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3256
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 15:55:05,524 ERROR 3256 [-/::1/-/1ms GET /news] nodejs.AssertionError [ERR_ASSERTION]: Can't find view/news/list.tpl from /Users/zhev/projects/SELF/node/egg-demo/app/view
+    at Map.resolve (/Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-view/lib/view_manager.js:74:5)
+generatedMessage: false
+name: "AssertionError [ERR_ASSERTION]"
+code: "ERR_ASSERTION"
+actual: undefined
+expected: true
+operator: "=="
+pid: 3256
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 18:05:20,155 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2120294ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 19:05:34,585 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 1833733ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 20:14:51,121 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2355861ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 21:21:34,874 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2223105ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-13 22:26:32,791 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2117196ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-14 00:32:42,531 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 1940165ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-14 02:42:45,838 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2160472ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-14 03:51:01,882 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2315351ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-14 04:55:59,970 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2097403ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-14 06:04:24,609 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 2323933ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+
+2019-04-14 07:04:20,540 ERROR 3222 nodejs.ClusterClientNoResponseError: client no response in 1815204ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 3222
+hostname: zhevs-MacBook-Pro.local
+

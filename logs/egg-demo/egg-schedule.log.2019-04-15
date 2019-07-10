@@ -1,0 +1,8 @@
+2019-04-15 17:55:22,131 INFO 23931 [egg-schedule]: register schedule /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-04-15 17:55:22,131 INFO 23931 [egg-schedule]: register schedule /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-04-16 04:40:38,354 INFO 3222 [Timer] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 69561650ms at 2019-04-17 00:00:00.004
+2019-04-16 04:40:38,360 INFO 23931 [Job#15553608383506283262620554413] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
+2019-04-16 04:40:38,372 INFO 23931 [Job#15553608383506283262620554413] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 11ms
+2019-04-16 04:40:39,351 INFO 23931 [Job#15553608393506283272622699063] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
+2019-04-16 04:40:39,356 INFO 23931 [Job#15553608393506283272622699063] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 5ms
+2019-04-16 04:40:39,354 INFO 3222 [Timer] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 69561650ms at 2019-04-17 00:00:01.004

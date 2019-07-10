@@ -1,0 +1,61 @@
+2019-04-30 11:37:39,619 INFO 60220 [egg-logrotator] agent logger reload: got log-reload message
+2019-05-01 06:28:36,520 ERROR 60220 nodejs.ClusterClientNoResponseError: client no response in 43270409ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 60220
+hostname: zhevs-MacBook-Pro.local
+
+2019-05-01 08:00:04,300 ERROR 60220 nodejs.ClusterClientNoResponseError: client no response in 5487376ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 60220
+hostname: zhevs-MacBook-Pro.local
+
+2019-05-02 00:00:07,386 ERROR 60220 nodejs.ClusterClientNoResponseError: client no response in 57602783ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 60220
+hostname: zhevs-MacBook-Pro.local
+
+2019-05-02 07:45:11,202 ERROR 60220 nodejs.ClusterClientNoResponseError: client no response in 27903800ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 60220
+hostname: zhevs-MacBook-Pro.local
+
+2019-05-02 13:45:12,487 ERROR 60220 nodejs.ClusterClientNoResponseError: client no response in 21601273ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 60220
+hostname: zhevs-MacBook-Pro.local
+
+2019-05-05 09:14:27,469 ERROR 60220 nodejs.ClusterClientNoResponseError: client no response in 242954973ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/zhev/projects/SELF/node/egg-demo/node_modules/cluster-client/lib/leader.js:77:23)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
+name: "ClusterClientNoResponseError"
+pid: 60220
+hostname: zhevs-MacBook-Pro.local
+

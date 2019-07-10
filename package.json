@@ -1,0 +1,16 @@
+{
+    "name": "egg-demo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "egg": "^2.21.1",
+        "egg-view-nunjucks": "^2.2.0"
+    },
+    "devDependencies": {
+        "egg-bin": "^4.12.3"
+    },
+    "scripts": {
+        "dev": "egg-bin dev"
+    }
+}

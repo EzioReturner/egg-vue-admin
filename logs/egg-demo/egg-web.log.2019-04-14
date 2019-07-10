@@ -1,0 +1,33 @@
+2019-04-14 07:32:39,546 INFO 3272 [egg-logrotator] app logger reload: got log-reload message
+2019-04-14 08:11:24,836 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 09:00:08,407 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 10:39:54,754 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 11:41:00,941 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 12:48:04,412 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 13:48:57,897 WARN 3272 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-04-14 13:48:57,897 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 14:59:09,529 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 16:03:55,239 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 17:06:38,002 WARN 3272 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-04-14 17:06:38,002 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 19:20:16,439 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 20:28:57,051 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 21:37:21,935 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 22:43:38,983 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-14 23:46:57,405 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 00:48:23,737 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 01:48:25,721 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 02:56:38,747 WARN 3272 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-04-15 02:56:38,748 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 04:03:09,588 WARN 3272 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-04-15 04:03:09,588 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 05:04:12,198 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 06:12:04,573 WARN 3272 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-04-15 06:12:04,573 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 07:18:58,623 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 08:22:00,100 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 09:00:10,841 WARN 3272 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2019-04-15 09:00:10,841 WARN 3272 [ClusterClient:Watcher] follower closed, and try to init it again
+2019-04-15 13:22:36,565 INFO 3272 [egg-logrotator] clean all log before 31 days
+2019-04-15 13:22:37,549 INFO 3272 [egg-logrotator] broadcast log-reload
+2019-04-15 13:22:37,549 INFO 3272 [egg-logrotator] rotate files success by DayRotator, files ["/Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/common-error.log -> /Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/common-error.log.2019-04-14","/Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-demo-web.log -> /Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-demo-web.log.2019-04-14","/Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-web.log -> /Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-web.log.2019-04-14","/Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-schedule.log -> /Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-schedule.log.2019-04-14","/Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-agent.log -> /Users/zhev/projects/SELF/node/egg-demo/logs/egg-demo/egg-agent.log.2019-04-14"]

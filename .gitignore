@@ -1,0 +1,7 @@
+logs/
+npm-debug.log
+yarn-error.log
+node_modules/
+.DS_Store
+package-lock.json
+yarn-lock.json
