@@ -38,7 +38,7 @@ export default class LuckyueNavigator extends Vue {
       (props => $scopedSlots.siteTitle(props))()
     ) : (
       <a class={style.controlBut} target="_blank" rel="noopener noreferrer">
-        <span class={`ml-2 ${style.title}`}>Luckyue</span>
+        <span class={`ml-2 ${style.title}`}>egg-vue-admin</span>
       </a>
     );
 
