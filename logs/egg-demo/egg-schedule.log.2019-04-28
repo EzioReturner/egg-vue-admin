@@ -1,6 +1,0 @@
-2019-04-29 00:00:00,950 INFO 60220 [Timer] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 86399060ms at 2019-04-30 00:00:00.007
-2019-04-29 00:00:00,959 INFO 63222 [Job#15564672009186591731730451975] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
-2019-04-29 00:00:00,970 INFO 63222 [Job#15564672009186591731730451975] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 8ms
-2019-04-29 00:00:01,915 INFO 63222 [Job#15564672019066591741502185045] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
-2019-04-29 00:00:01,918 INFO 63222 [Job#15564672019066591741502185045] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 3ms
-2019-04-29 00:00:01,930 INFO 60220 [Timer] /Users/zhev/projects/SELF/node/egg-demo/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 86399092ms at 2019-04-30 00:00:01.021

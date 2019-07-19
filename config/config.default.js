@@ -1,14 +1,30 @@
-module.exports = {
-  keys: "asd13176a7sdhkasd",
-  // 配置需要的中间件，数组顺序即为中间件的加载顺序
-  news: {
-    pageSize: 5,
-    serverUrl: 'https://hacker-news.firebaseio.com/v0',
-  },
-  view: {
-    defaultViewEngine: 'nunjucks',
-    mapping: {
-      '.tpl': 'nunjucks',
-    },
-  }
+/* eslint valid-jsdoc: "off" */
+
+"use strict";
+
+/**
+ * @param {Egg.EggAppInfo} appInfo app info
+ */
+module.exports = appInfo => {
+  /**
+   * built-in config
+   * @type {Egg.EggAppConfig}
+   **/
+  const config = (exports = {});
+
+  // use for cookie sign key, should change to your own and keep security
+  config.keys = appInfo.name + "_1563349311354_1224";
+
+  // add your middleware config here
+  config.middleware = [];
+
+  // add your user config here
+  const userConfig = {
+    // myAppName: 'egg',
+  };
+
+  return {
+    ...config,
+    ...userConfig
+  };
 };

@@ -1,16 +1,112 @@
 {
-    "name": "egg-demo",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT",
-    "dependencies": {
-        "egg": "^2.21.1",
-        "egg-view-nunjucks": "^2.2.0"
-    },
-    "devDependencies": {
-        "egg-bin": "^4.12.3"
-    },
-    "scripts": {
-        "dev": "egg-bin dev"
+  "name": "testue",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.136",
+    "core-js": "^2.6.5",
+    "egg": "^2.15.1",
+    "egg-scripts": "^2.11.0",
+    "element-ui": "^2.10.1",
+    "nprogress": "^0.2.0",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.7",
+    "vuex": "^3.1.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.4",
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.4",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.0.0",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-plugin-pwa": "^3.9.0",
+    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-plugin-unit-mocha": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "babel-eslint": "^10.0.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.16.0",
+    "eslint-config-egg": "^7.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.3",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-testue",
+    "stop": "egg-scripts stop --title=egg-server-testue",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "start-server": "egg-bin dev --port=9009",
+    "start-client": "cd client && yarn serve || npm run serve",
+    "test-client:e2e": "cd client && yarn test:e2e || npm run test:e2e",
+    "lint-client": "cd client && yarn lint --fix || npm run lint",
+    "build": "cd client && yarn build || npm run build"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": "last 5 version"
+      }
     }
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "printWidth": 100,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "jsxBracketSameLine": false
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cd client && pretty-quick --staged"
+    }
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
 }
