@@ -1,22 +1,19 @@
-.layout {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.splitLayout {
+  display: flex;
+  flex-flow: row;
+}
+
+.inlineLayout {
+  display: flex;
+  flex-flow: column;
 }
 
 .container {
-  position: absolute;
-  left: 255px;
-  top: 0px;
-  bottom: 0;
-  right: 0;
-  margin-top: 60px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
   overflow: auto;
   transition: all 0.3s;
-  display: flex;
-  flex-direction: column;
   &.collapsed {
     left: 80px;
   }

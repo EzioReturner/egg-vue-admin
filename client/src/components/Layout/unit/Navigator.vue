@@ -9,6 +9,7 @@ import { MenuModel } from '@model/components/layout.model';
 const routes = constantRouterMap[0].children;
 @Component
 export default class LuckyueNavigator extends Vue {
+  @Prop(Object) readonly editStyle: any;
   private collapsed: boolean = false;
   private openMenu: string[] = [];
 
@@ -20,6 +21,9 @@ export default class LuckyueNavigator extends Vue {
     return `/${this.openMenu.join('/')}`;
   }
 
+  /**
+   * 默认开启菜单判断
+   */
   checkOpenMenu(): string[] {
     const { path, params } = this.$route;
     const paramsValue = JSON.stringify(params) !== '{}' ? Object.values(params) : [];
@@ -29,18 +33,12 @@ export default class LuckyueNavigator extends Vue {
   }
 
   render(h: any) {
-    const { $scopedSlots } = this;
+    const { $scopedSlots, editStyle } = this;
 
     /**
      * SiteTitle 插槽渲染判断
      */
-    const SiteTitle = $scopedSlots.siteTitle ? (
-      (props => $scopedSlots.siteTitle(props))()
-    ) : (
-      <a class={style.controlBut} target="_blank" rel="noopener noreferrer">
-        <span class={`ml-2 ${style.title}`}>egg-vue-admin</span>
-      </a>
-    );
+    const SiteTitle = $scopedSlots.siteTitle ? (props => $scopedSlots.siteTitle(props))() : null;
 
     /**
      * 菜单数据过滤方法
@@ -95,6 +93,7 @@ export default class LuckyueNavigator extends Vue {
       <el-menu
         collapsed={this.collapsed}
         router={true}
+        class="asideMenu"
         style="margin-top:20px;"
         default-active={this.activeIndex}
         default-openeds={this.openMenu}
@@ -104,10 +103,10 @@ export default class LuckyueNavigator extends Vue {
     );
 
     return (
-      <div class={style.navigator}>
+      <aside class={style.navigator} style={editStyle}>
         {SiteTitle}
         <div class={style.menuContainer}>{NavMenu}</div>
-      </div>
+      </aside>
     );
   }
 }

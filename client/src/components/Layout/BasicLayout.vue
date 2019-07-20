@@ -4,16 +4,23 @@ import LuckyueHeader from './unit/Header.vue';
 import LuckyueNavigator from './unit/Navigator.vue';
 import LuckyueMainContainer from './unit/MainContainer.vue';
 import style from './BasicLayout.module.scss';
+//@ts-ignore
+import { header } from '@config/setting';
 
+const { mode: header_mode } = header;
 @Component
 export default class BasicLayout extends Vue {
+  @Prop(Object) readonly editStyle: any;
   public collapsed: boolean = false;
-
   mounted() {}
 
-  createSlot(v_type: string): any {
+  /**
+   * 获取 slots 方法
+   */
+  getSlots(): any {
     const { $scopedSlots } = this;
-    if (!$scopedSlots || JSON.stringify($scopedSlots) === '{}') {
+
+    if (!$scopedSlots) {
       return;
     }
     return Object.keys($scopedSlots).reduce((total: any, slot: string) => {
@@ -24,34 +31,64 @@ export default class BasicLayout extends Vue {
       }
       if (!slotName) {
         console.warn('Luckyue', '[BasicLayout]:', '组件未按约定传参');
-      } else {
-        if (v_type === type) {
-          const scope_slot = $scopedSlots[slot];
-          scope_slot && (total[slotName] = (props: any) => scope_slot(props));
-          return total;
-        }
+        return;
       }
+      !total[`${type}Slots`] && (total[`${type}Slots`] = {});
+
+      const scope_slot = $scopedSlots[slot];
+      scope_slot && (total[`${type}Slots`][slotName] = (props: any) => scope_slot(props));
+      return total;
     }, {});
   }
 
   render(h: any) {
-    return (
-      <div class={style.layout}>
-        <LuckyueNavigator
-          {...{
-            scopedSlots: this.createSlot('nav')
-          }}
-        />
-        <div class={[style.container, this.collapsed ? style.collapsed : '']}>
-          <LuckyueHeader
-            {...{
-              scopedSlots: this.createSlot('header')
-            }}
-          />
-          <LuckyueMainContainer />
-        </div>
-      </div>
+    const { navSlots, headerSlots } = this.getSlots();
+
+    const { navStyle, headerStyle, mainStyle } = this.editStyle;
+
+    const Navigator = (
+      <LuckyueNavigator
+        {...{
+          scopedSlots: navSlots
+        }}
+        props={{
+          editStyle: navStyle
+        }}
+      />
     );
+
+    const Header = (
+      <LuckyueHeader
+        {...{
+          scopedSlots: headerSlots,
+          editStyle: headerStyle
+        }}
+      />
+    );
+
+    const MainContainer = <LuckyueMainContainer {...{ editStyle: mainStyle }} />;
+
+    const SplitLayout = (
+      <section class={style.splitLayout}>
+        {Navigator}
+        <section class={[style.container, this.collapsed ? style.collapsed : '']}>
+          {Header}
+          {MainContainer}
+        </section>
+      </section>
+    );
+
+    const InlineLayout = (
+      <section class={style.inlineLayout}>
+        {Header}
+        <section class={style.container}>
+          {Navigator}
+          {MainContainer}
+        </section>
+      </section>
+    );
+
+    return header_mode === 'split' ? SplitLayout : InlineLayout;
   }
 }
 </script>

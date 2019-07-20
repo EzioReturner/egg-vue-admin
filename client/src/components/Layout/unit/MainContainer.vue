@@ -4,11 +4,12 @@ import style from './MainContainer.module.scss';
 
 @Component
 export default class LuckyueMainContainer extends Vue {
+  @Prop(Object) readonly editStyle: any;
   render(h: any) {
     return (
-      <div class={style.viewBody}>
+      <main class={style.viewBody} style={this.editStyle}>
         <router-view />
-      </div>
+      </main>
     );
   }
 }
