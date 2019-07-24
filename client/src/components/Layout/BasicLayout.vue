@@ -1,19 +1,23 @@
 <script lang="tsx">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Action, namespace, State } from 'vuex-class';
 import LuckyueHeader from './unit/Header.vue';
 import LuckyueNavigator from './unit/Navigator.vue';
 import LuckyueMainContainer from './unit/MainContainer.vue';
 import style from './BasicLayout.module.scss';
-//@ts-ignore
-import { header } from '@config/setting';
+// @ts-ignore
+import { SET_COLLAPSE_CONFIG_FN } from '@constants/index';
 
-const { mode: header_mode } = header;
 @Component
 export default class BasicLayout extends Vue {
-  @Prop(Object) readonly editStyle: any;
-  public collapsed: boolean = false;
-  mounted() {}
+  @Prop(Object) readonly editConfig: any;
+  @State(state => state.collapsed) _collapsed: any;
+  @Action(SET_COLLAPSE_CONFIG_FN) setCollapseConfigFN: Function;
 
+  mounted() {
+    const { collapse } = this.editConfig;
+    this.setCollapseConfigFN(collapse);
+  }
   /**
    * 获取 slots 方法
    */
@@ -42,17 +46,22 @@ export default class BasicLayout extends Vue {
   }
 
   render(h: any) {
+    const { _collapsed } = this;
+
     const { navSlots, headerSlots } = this.getSlots();
 
-    const { navStyle, headerStyle, mainStyle } = this.editStyle;
+    const { navStyle, headerStyle, mainStyle, headerMode } = this.editConfig;
+
+    const _headerMode = headerMode || 'header';
 
     const Navigator = (
       <LuckyueNavigator
         {...{
-          scopedSlots: navSlots
-        }}
-        props={{
-          editStyle: navStyle
+          scopedSlots: navSlots,
+          props: {
+            editStyle: { ...navStyle, 'min-height': _headerMode === 'inline' ? 'auto' : '100vh' },
+            _collapsed
+          }
         }}
       />
     );
@@ -61,17 +70,25 @@ export default class BasicLayout extends Vue {
       <LuckyueHeader
         {...{
           scopedSlots: headerSlots,
-          editStyle: headerStyle
+          props: {
+            editStyle: headerStyle
+          }
         }}
       />
     );
 
-    const MainContainer = <LuckyueMainContainer {...{ editStyle: mainStyle }} />;
+    const MainContainer = (
+      <LuckyueMainContainer
+        props={{
+          editStyle: mainStyle
+        }}
+      />
+    );
 
     const SplitLayout = (
       <section class={style.splitLayout}>
         {Navigator}
-        <section class={[style.container, this.collapsed ? style.collapsed : '']}>
+        <section class={[style.container, _collapsed && style.collapsed]}>
           {Header}
           {MainContainer}
         </section>
@@ -81,14 +98,14 @@ export default class BasicLayout extends Vue {
     const InlineLayout = (
       <section class={style.inlineLayout}>
         {Header}
-        <section class={style.container}>
+        <section class={[style.container, style.inline]}>
           {Navigator}
           {MainContainer}
         </section>
       </section>
     );
 
-    return header_mode === 'split' ? SplitLayout : InlineLayout;
+    return _headerMode === 'split' ? SplitLayout : InlineLayout;
   }
 }
 </script>

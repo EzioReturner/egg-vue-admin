@@ -1,16 +1,15 @@
 <script lang="tsx">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import Collapsed from '../../Collapse/index.vue';
 import style from './Header.module.scss';
+// @ts-ignore
+import { CollapseConfig } from '@model/components/layout.model';
+import { Action, namespace, State } from 'vuex-class';
 
 @Component
 export default class LuckyueHeader extends Vue {
   @Prop(Object) readonly editStyle: any;
-  // onClick() {
-  //   const { $listeners, item } = this;
-  //   const { click: onClick } = $listeners;
-  //   onClick && onClick(item);
-  // }
-  handleCollapse() {}
+  @State(state => state.collapseConfig) collapseConfig: CollapseConfig;
 
   render(h: any) {
     const { $scopedSlots, editStyle } = this;
@@ -20,15 +19,18 @@ export default class LuckyueHeader extends Vue {
      */
     const SiteTitle = $scopedSlots.siteTitle ? (props => $scopedSlots.siteTitle(props))() : null;
 
+    /**
+     * 右侧操作栏位插槽
+     */
+    const Actions = $scopedSlots.actions ? (props => $scopedSlots.actions(props))() : null;
+
+    const { position } = this.collapseConfig;
+
     return (
       <header class={style.header} style={editStyle}>
-        {SiteTitle}
-        <el-button
-          type="text"
-          icon="el-icon-d-arrow-left"
-          class={style.collapsedIcon}
-          onClick={this.handleCollapse}
-        />
+        {SiteTitle && <div class={style.titlePlace}>{SiteTitle}</div>}
+        {position === 'header' && <Collapsed />}
+        {Actions && <div class={style.actionPlace}>{Actions}</div>}
       </header>
     );
   }

@@ -1,5 +1,5 @@
 @import './nprogress.scss';
-@import './elementui.scss';
+@import './antdUI.scss';
 
 html,
 body {
@@ -30,7 +30,7 @@ body {
 
 :global {
   @include nprogress;
-  @include elementUI;
+  @include antdUI;
 }
 
 #app {

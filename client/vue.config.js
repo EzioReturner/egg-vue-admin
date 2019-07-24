@@ -33,6 +33,14 @@ module.exports = {
       ]
     });
   },
+  css: {
+    loaderOptions: {
+      less: {
+        // 配置主题色入口
+        javascriptEnabled: true
+      }
+    }
+  },
   outputDir: path.resolve(__dirname, '../app/public/'),
   publicPath: './', //ENV === 'dev' ? 'http://localhost:9527/' : publicPathMapping[ENV],
   devServer: {

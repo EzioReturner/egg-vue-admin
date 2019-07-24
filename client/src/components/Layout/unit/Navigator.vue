@@ -1,5 +1,5 @@
 <script lang="tsx">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
 import style from './Navigator.module.scss';
 // @ts-ignore
 import { constantRouterMap } from '@config/routes';
@@ -10,16 +10,21 @@ const routes = constantRouterMap[0].children;
 @Component
 export default class LuckyueNavigator extends Vue {
   @Prop(Object) readonly editStyle: any;
-  private collapsed: boolean = false;
-  private openMenu: string[] = [];
+  @Prop(Boolean) readonly _collapsed: boolean;
 
-  public mounted() {
-    this.openMenu = this.checkOpenMenu();
+  public mounted() {}
+
+  public get activeIndex(): string[] {
+    return [`/${this.openMenu.join('/')}`];
   }
 
-  public get activeIndex(): string {
-    return `/${this.openMenu.join('/')}`;
+  public get openMenu(): string[] {
+    return this.checkOpenMenu();
   }
+
+  // @Watch('$route.path')
+  // valueChange(val: string, oldVal: string): void {
+  // }
 
   /**
    * 默认开启菜单判断
@@ -32,8 +37,19 @@ export default class LuckyueNavigator extends Vue {
     });
   }
 
+  handleClickMenuItem(path: string) {
+    this.$router.push(path);
+  }
+
   render(h: any) {
-    const { $scopedSlots, editStyle } = this;
+    const {
+      $scopedSlots,
+      editStyle,
+      _collapsed,
+      openMenu,
+      activeIndex,
+      handleClickMenuItem
+    } = this;
 
     /**
      * SiteTitle 插槽渲染判断
@@ -49,11 +65,16 @@ export default class LuckyueNavigator extends Vue {
       }
       return _routes
         .filter((menu: MenuModel) => {
-          const { hidden, authority } = menu;
-          if (!hidden) {
+          const { meta } = menu;
+          if (!meta) {
             return true;
+          } else {
+            const { hiddenMenu, authority } = meta;
+            if (!hiddenMenu) {
+              return true;
+            }
+            return false;
           }
-          return false;
         })
         .map((menu: MenuModel) => generateMenu(menu, parentPath));
     };
@@ -67,43 +88,48 @@ export default class LuckyueNavigator extends Vue {
 
       if (children && children.length) {
         return (
-          <el-submenu index={path}>
+          <a-sub-menu key={path}>
             <template slot="title">
-              {icon && <i class={`el-icon-${icon}`}></i>}
-              <span>{name}</span>
+              {icon && <a-icon type={icon} />}
+              <span class={style.menuTitle}>{name}</span>
             </template>
             {getNavMenu(children, _path)}
-          </el-submenu>
+          </a-sub-menu>
         );
       }
       return (
-        <el-menu-item index={_path}>
-          {icon && <i class={`el-icon-${icon}`}></i>}
-          {name}
-        </el-menu-item>
+        <a-menu-item key={_path} onClick={() => handleClickMenuItem(_path)}>
+          {icon && <a-icon type={icon} />}
+          <span class={style.menuTitle}>{name}</span>
+        </a-menu-item>
       );
     };
 
     /**
      * NavMenu 插槽渲染判断
      */
+    const menuProps = _collapsed
+      ? {}
+      : {
+          openKeys: openMenu
+        };
     const NavMenu = $scopedSlots.NavMenu ? (
       (props => $scopedSlots.NavMenu(props))()
     ) : (
-      <el-menu
-        collapsed={this.collapsed}
-        router={true}
+      <a-menu
+        inlineCollapsed={_collapsed}
+        mode="inline"
         class="asideMenu"
         style="margin-top:20px;"
-        default-active={this.activeIndex}
-        default-openeds={this.openMenu}
+        selectedKeys={activeIndex}
+        defaultOpenKeys={openMenu}
       >
         {routes && getNavMenu(routes)}
-      </el-menu>
+      </a-menu>
     );
 
     return (
-      <aside class={style.navigator} style={editStyle}>
+      <aside class={[style.navigator, _collapsed && style.collapsed]} style={editStyle}>
         {SiteTitle}
         <div class={style.menuContainer}>{NavMenu}</div>
       </aside>

@@ -12,7 +12,13 @@ Vue.use(VueRouter);
 
 router.beforeEach((to, from, next) => {
   NProgress.start();
-  next();
+  const { meta, matched } = to;
+
+  if ((meta && meta.hiddenMenu && !meta.pass) || !matched.length) {
+    next({ path: '/404' });
+  } else {
+    next();
+  }
 });
 
 router.afterEach(() => {

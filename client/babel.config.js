@@ -1,17 +1,8 @@
 module.exports = {
-  presets: [
-    '@vue/app',
-    '@vue/babel-preset-jsx',
-    ['@babel/preset-env', { modules: false }]
-  ],
+  presets: ['@vue/app', '@vue/babel-preset-jsx', ['@babel/preset-env', { modules: false }]],
   plugins: [
     'transform-vue-jsx',
-    [
-      'component',
-      {
-        libraryName: 'element-ui',
-        styleLibraryName: 'theme-chalk'
-      }
-    ]
+    // 补lessloader
+    ['import', { libraryName: 'ant-design-vue', libraryDirectory: 'es', style: true }]
   ]
 };

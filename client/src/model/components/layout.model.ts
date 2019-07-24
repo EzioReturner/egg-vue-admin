@@ -4,6 +4,12 @@ export interface MenuModel {
   path: string;
   component: any;
   children?: any;
-  hidden?: boolean;
   authority?: string[];
+  meta?: any;
+}
+
+export interface CollapseConfig {
+  icon: string;
+  style: Object;
+  position: string;
 }

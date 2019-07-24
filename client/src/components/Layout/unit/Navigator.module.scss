@@ -1,7 +1,6 @@
 @import '@styles/color.scss';
 
 .navigator {
-  min-height: 100vh;
   position: relative;
   width: 255px;
   background: #ffffff;
@@ -10,13 +9,16 @@
   transition: all 0.3s;
   &.collapsed {
     width: 80px;
-    .title {
-      display: none;
+    .menuTitle {
+      max-width: 0;
+      display: inline-block;
+      opacity: 0;
     }
   }
 
   .menuContainer {
     height: calc(100% - 83px);
     overflow: auto;
+    overflow-x: hidden;
   }
 }
