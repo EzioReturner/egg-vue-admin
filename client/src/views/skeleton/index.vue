@@ -45,11 +45,6 @@ export default class Skeleton extends Vue {
       position: 'header' // 'breadcrumb'
     }
   };
-
-  handleClickActions() {
-    this.$notify.info({
-      message: 'hahahha'
-    });
-  }
+  handleClickActions() {}
 }
 </script>
