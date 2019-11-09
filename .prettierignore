@@ -1,0 +1,7 @@
+*.md
+bin/*
+config/*
+node_modules/*
+public/*
+run/*
+test/*

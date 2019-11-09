@@ -1,0 +1,7 @@
+// Alias Primary
+$primary-color: #29d !default;
+$primary-color-sec: #29d !default;
+$primary-color-dark: darken($primary-color, 8%) !default;
+$primary-color-light: lighten($primary-color, 8%) !default;
+$primary-color-lighter: lighten($primary-color, 20%) !default;
+$primary-color-low: lighten($primary-color, 33.5%) !default;
